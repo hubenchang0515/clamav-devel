@@ -47,7 +47,7 @@
 #include <ifaddrs.h>
 #endif
 
-#if defined(SIOCGIFHWADDR) && !defined(__GNU__)
+#if defined(SIOCGIFHWADDR) && !defined(__GNU__) && !defined(__MINGW32__)
 #if defined(_AIX)
 #include <sys/ndd_var.h>
 #include <sys/kinfo.h>
